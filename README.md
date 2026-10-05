@@ -2,7 +2,7 @@
 
 โปรเจกต์ **Object Detection** สำหรับตรวจจับอุปกรณ์รับประทานอาหาร 3 ประเภท ได้แก่ **Chopstick, Fork และ Spoon** โดยใช้ YOLO26
 
-ระบบรองรับการตรวจจับทั้งจาก **รูปภาพ** และ **Webcam แบบ Real-time** พร้อมมีโมเดลที่ผ่านการ Train แล้วเก็บไว้ในโฟลเดอร์ `https://github.com/ch4kkapatPR/AIML_YOLO/tree/main/Model`
+ระบบรองรับการตรวจจับทั้งจาก **รูปภาพ** และ **Webcam แบบ Real-time** พร้อมมีโมเดลที่ผ่านการ Train แล้วเก็บไว้ในโฟลเดอร์ [https://github.com/ch4kkapatPR/AIML_YOLO/tree/main/Model](https://github.com/ch4kkapatPR/AIML_YOLO/tree/main/Model)
 
 ---
 
