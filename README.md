@@ -124,51 +124,25 @@ AIML.cam/
 
 ---
 
-#  Installation
+## Installation
 
-## 1. Clone Repository
-
-```bash
-git clone <YOUR_REPOSITORY_URL>
-cd AIML.cam
-```
-
-> หาก Repository ถูก Clone มาแล้ว สามารถข้ามขั้นตอนนี้ได้
-
----
-
-## 2. Create Virtual Environment
-
-แนะนำให้สร้าง Virtual Environment เพื่อแยก Python packages ของโปรเจกต์ออกจากระบบหลัก
+สร้าง virtual environment
 
 ```bash
 python -m venv env
 ```
 
-### Windows PowerShell
+PowerShell
 
 ```powershell
 .\env\Scripts\Activate.ps1
 ```
 
----
-
-## 3. Install Dependencies
-
-ติดตั้ง packages จาก `requirements.txt`
+ติดตั้ง package
 
 ```bash
-pip install -r requirements.txt
+pip install ultralytics opencv-python label-studio torch torchvision
 ```
-
-หรือสามารถติดตั้ง packages ที่จำเป็นด้วยคำสั่ง:
-
-```bash
-pip install ultralytics opencv-python torch torchvision
-```
-
----
-
 #  Dataset
 
 Dataset ของโปรเจกต์อยู่ใน:
