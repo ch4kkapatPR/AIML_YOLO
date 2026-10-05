@@ -170,51 +170,55 @@ dataset2/
 
 ---
 
-#  Training
-
-ไฟล์สำหรับ Training คือ:
-
-```text
-02-train.py
-```
-
-รันด้วย:
+รัน:
 
 ```bash
 python 02-train.py
 ```
 
-โมเดลที่ได้จากการ Training สามารถนำมาใช้สำหรับ Inference โดยใช้ไฟล์:
+หรือ:
 
-```text
-Model/best.pt
+```bash
+yolo detect train data="dataset2/data.yaml" model=yolo26n.pt epochs=250 imgsz=640 batch=4
 ```
 
----
-
-#  Test with Image
-
-โปรเจกต์มีไฟล์:
+โมเดลที่ใช้ทดสอบ:
 
 ```text
-03-test-image.py
+runs/detect/train-6/weights/best.pt
 ```
 
-สำหรับทดสอบโมเดลกับรูปภาพ
+## 4. Validation
+
+```bash
+yolo detect val model="runs/detect/train-6/weights/best.pt" data="dataset2/data.yaml" imgsz=640
+```
+
+YOLO จะแสดง Precision, Recall, mAP50 และ mAP50-95 ทั้งแบบรวมและแยกแต่ละ Class
+
+## 5. Real-time Camera
+
+ตรวจให้ `model_path` ใน `05-test-camera.py` ชี้ไปยังโมเดลล่าสุด เช่น:
+
+```python
+model_path = r"E:\AIML.cam\runs\detect\train-6\weights\best.pt"
+```
 
 รัน:
 
 ```bash
-python 03-test-image.py
+python 05-test-camera.py
 ```
 
-สามารถใช้รูป:
+ค่าปัจจุบัน:
 
 ```text
-test_3.jpg
+conf = 0.5
+imgsz = 640
+camera = 0
 ```
 
-เป็นตัวอย่างสำหรับการทดสอบได้
+กด `q` เพื่อออก
 
 ### Workflow
 
