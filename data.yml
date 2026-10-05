@@ -1,0 +1,8 @@
+path: E:/AIML.cam/dataset2
+train: images/train
+val: images/val
+
+names:
+  0: Chopstick
+  1: Fork
+  2: Spoon

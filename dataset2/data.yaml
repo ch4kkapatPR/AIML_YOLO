@@ -1,0 +1,6 @@
+path: E:/AIML.cam/dataset2
+train: images/train
+val: images/val
+
+nc: 3
+names: ['Chopstick', 'Fork', 'Spoon']
