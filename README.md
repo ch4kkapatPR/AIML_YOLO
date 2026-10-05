@@ -357,11 +357,11 @@ python 05-test-camera.py
 
 #  Notes
 
-- ตรวจสอบ Path ของ Dataset ก่อน Training
-- ตรวจสอบ `data.yml` ให้ Class และ Path ถูกต้อง
-- ตรวจสอบว่า `Model/best.pt` เป็น Model ที่ต้องการใช้งาน
-- หากเปลี่ยน Model ให้แก้ Path ในไฟล์ Test
-- ควรแยก Test Dataset ออกจาก Training Dataset หากต้องการประเมินความสามารถของ Model กับข้อมูลที่ไม่เคยเห็นมาก่อน
+- ควรมีรูปที่หลากหลายทั้งพื้นหลัง แสง มุม และระยะ
+- ควรมีภาพจาก Webcam จริงอยู่ใน Dataset
+- Chopstick ตรวจจับยากกว่าเพราะมีลักษณะบางและยาว
+- ใช้ `best.pt` สำหรับ Inference
+- Test set ควรแยกจาก Train / Validation หากต้องการวัดผลกับรูปที่โมเดลไม่เคยเห็นจริง
 
 ---
 
