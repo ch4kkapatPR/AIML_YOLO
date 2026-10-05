@@ -51,20 +51,22 @@
 AIML.cam/
 │
 ├── Model/
-│   └── best.pt
-│
+│   └── best.pt                
 ├── dataset2/
-│
-├── .gitignore
-│
-├── 01-export_dataset.py
-├── 02-train.py
-├── 03-test-image.py
-├── 05-test-camera.py
-│
-├── README.md
-├── data.yml
-├── requirements.txt
+│   ├── labels/
+│   │   ├── train/              
+│   │   ├── train.cache         
+│   │   ├── val.cache           
+│   │   └── classes.txt          
+│   └── data.yaml            
+├── .gitignore                   
+├── 01-export_dataset.py       
+├── 02-train.py                  
+├── 03-test_image.py         
+├── 05-test-camera.py        
+├── README.md                   
+├── data.yml                     
+├── requirements.txt             
 └── test_3.jpg
 ```
 
