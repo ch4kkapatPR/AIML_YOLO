@@ -147,6 +147,8 @@ pip install ultralytics opencv-python label-studio torch torchvision
 
 Dataset ของโปรเจกต์อยู่ใน:
 
+https://drive.google.com/drive/folders/1PJZQRpQDp8prdwec8daG9J0zKiinndmW
+
 ```text
 dataset2/
 ```
