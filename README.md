@@ -74,7 +74,7 @@ AIML.cam/
 |---|---|
 | `Model/best.pt` | โมเดล YOLO ที่ Train แล้ว ใช้สำหรับตรวจจับ |
 | `dataset2/` | Dataset ที่ใช้ในโปรเจกต์ |
-| `https://github.com/ch4kkapatPR/AIML_YOLO/blob/main/01-export_dataset.py` | เตรียมและแปลง Dataset |
+| `01-export_dataset.py` | เตรียมและแปลง Dataset |
 | `02-train.py` | ใช้สำหรับ Training Model |
 | `03-test-image.py` | ทดสอบ Model กับรูปภาพ |
 | `05-test-camera.py` | ตรวจจับวัตถุผ่าน Webcam แบบ Real-time |
