@@ -70,10 +70,10 @@ AIML.cam/
 └── test_3.jpg
 ```
 
-### รายละเอียดไฟล์
+## รายละเอียดไฟล์
 
 | File / Folder | Description |
-|---|---|
+| :--- | :--- |
 | `Model/best.pt` | โมเดล YOLO ที่ Train แล้ว ใช้สำหรับตรวจจับ |
 | `dataset2/` | Dataset ที่ใช้ในโปรเจกต์ |
 | `01-export_dataset.py` | เตรียมและแปลง Dataset |
